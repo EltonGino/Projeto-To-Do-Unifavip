@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    color: #000080;
+    background-color: #6bf90a;
+  }
+
+  .container {
+    width: 95%;
+    max-width: 34rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  #new-task {
+    position: relative;
+    background-color: #ffffff;
+    padding: 1.8rem 2.25rem;
+    border-radius: 0.5rem;
+    box-shadow:
+    22.3px 13.1px 7.2px rgba(0, 0, 0, 0.099),
+    52.4px 30.8px 24.1px rgba(0, 0, 0, 0.149),
+    162px 95px 108px rgba(0, 0, 0, 0.21);
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1rem;
+  }
+  
+  #new-task input {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #000080;
+    padding: 0.8rem 0.5rem;
+    color: #111111;
+    font-weight: 700;
+  }
+
+  #new-task input:focus {
+    outline: none;
+    border-color: #000080;
+  }
+
+  #new-task button {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #000080;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+  }
+
+  #new-task button:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+  }
+  
+  #atividades {
+    background-color: #ffffff;
+    position: relative;
+    padding: 1.8em 1.25em;
+    margin-top: 3.8em;
+    width: 100%;
+    box-shadow: 
+    22.3px 13.1px 7.2px rgba(0, 0, 0, 0.099),
+    52.4px 30.8px 24.1px rgba(0, 0, 0, 0.149),
+    162px 95px 108px rgba(0, 0, 0, 0.21);
+    border-radius: 0.6em;
+  }
+  .task {
+    background-color: #ffffff;
+    padding: 0.3rem 0.6rem;
+    margin-top: 0.6rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #000080;
+    cursor: pointer;
+  }
+  .task span {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .task button {
+    color: #ffffff;
+    padding: 0.7rem 0;
+    width: 3rem;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: #fb3b3b;
+  }
+  .edit {
+    background-color: #0b87ff;
+    margin-left: auto;
+    margin-right: 3em;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
